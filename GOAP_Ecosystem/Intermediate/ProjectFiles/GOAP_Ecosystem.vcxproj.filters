@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\GOAP_Ecosystem.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{3F11BBE4-D43E-427A-A380-51246267EFC6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GOAP_Ecosystem.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\GOAP_EcosystemEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{04EDCCC5-1B87-44CB-9AD7-394FEFE5AF9F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\GOAP_Ecosystem">
+      <UniqueIdentifier>{5C9D97FC-E398-4CB5-BCA2-B3D01C6D6113}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GOAP_Ecosystem\Animal.cpp">
+      <Filter>Source\GOAP_Ecosystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\Animal.h">
+      <Filter>Source\GOAP_Ecosystem</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\GOAP_Ecosystem\GOAP_Ecosystem.Build.cs">
+      <Filter>Source\GOAP_Ecosystem</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\GOAP_Ecosystem\GOAP_Ecosystem.cpp">
+      <Filter>Source\GOAP_Ecosystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\GOAP_Ecosystem.h">
+      <Filter>Source\GOAP_Ecosystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

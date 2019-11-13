@@ -75,7 +75,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{06709995-12E7-4B42-9C14-33F2E89B5932}</ProjectGuid>
+    <ProjectGuid>{07090B91-879B-4F4E-916B-2649E6132350}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>GOAP_Ecosystem</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>

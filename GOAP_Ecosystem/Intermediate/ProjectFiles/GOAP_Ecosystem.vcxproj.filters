@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GOAP_Ecosystem.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A11BF774-8133-4FFC-A9F0-CA66FB8A154F}</UniqueIdentifier>
+      <UniqueIdentifier>{6ED73C0E-E5B2-4464-BAF5-18D4B2AAE246}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GOAP_Ecosystem.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{B591904E-CAD8-45B4-B9F2-16C8CFD9032C}</UniqueIdentifier>
+      <UniqueIdentifier>{0A7D274F-7C85-4133-8B65-20AB5EFE9CEC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GOAP_Ecosystem">
-      <UniqueIdentifier>{F926D76C-266F-4E7A-955B-C57DFDB85142}</UniqueIdentifier>
+      <UniqueIdentifier>{3848AEBE-6B8A-4009-A063-FED133214B7D}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GOAP_Ecosystem\Animal.cpp">
       <Filter>Source\GOAP_Ecosystem</Filter>
@@ -48,7 +48,7 @@
       <Filter>Source\GOAP_Ecosystem</Filter>
     </ClInclude>
     <Filter Include="Source\GOAP_Ecosystem\Animal">
-      <UniqueIdentifier>{39014FAB-0741-40A7-9A55-06D6FD2F797E}</UniqueIdentifier>
+      <UniqueIdentifier>{298FEB96-7A10-4C53-8F07-35C2E5DE7AE3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GOAP_Ecosystem\Animal\Behavior.cpp">
       <Filter>Source\GOAP_Ecosystem\Animal</Filter>

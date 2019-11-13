@@ -69,4 +69,19 @@
       <Filter>Source\GOAP_Ecosystem\Animal</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\GOAP_Ecosystem\Plants">
+      <UniqueIdentifier>{5ba101fe-f71c-4a0a-9965-3632809821ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\Plants\Plant.h">
+      <Filter>Source\GOAP_Ecosystem\Plants</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\GOAP_Ecosystem\Plants\Plant.cpp">
+      <Filter>Source\GOAP_Ecosystem\Plants</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

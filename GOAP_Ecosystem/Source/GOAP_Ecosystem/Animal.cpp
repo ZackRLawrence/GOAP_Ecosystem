@@ -3,13 +3,23 @@
 
 #include "Animal.h"
 
+ConstructorHelpers::FObjectFinder<UStaticMesh> AAnimal::SphereMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
+
 // Sets default values
 AAnimal::AAnimal()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	
-	Mesh = CreateDefaultSubobject<UStaticMeshComponent>("AnimalMesh");
+
+	RootComponent = CreateDefaultSubobject<USceneComponent>(FName("Root"));
+
+	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(FName("AnimalMesh"));
+	//Mesh->SetupAttachment(RootComponent);
+	DetectionRadius = CreateDefaultSubobject<USphereComponent>(FName("DetectionBounds"));
+	DetectionRadius->SetupAttachment(RootComponent);
+	DetectionRadius->SetSphereRadius(400);
+	//SphereMesh->SetStaticMesh(SphereMeshAsset.Object);
+	//SphereMesh->SetupAttachment(DetectionRadius);
 }
 
 // Called when the game starts or when spawned
@@ -19,14 +29,19 @@ void AAnimal::BeginPlay()
 	
 }
 
+void AAnimal::PostInitializeComponents()
+{
+	//Sphere = CreateDefaultSubobject<USphereComponent>("DetectionBounds");
+	//Sphere->SetupAttachment(RootComponent);
+	//Sphere->RegisterComponent();
+	//Sphere->SetRelativeLocation(FVector(0, 0, 0));
+	//DetectionRadius->bHiddenInGame = true;
+}
+
 // Called every frame
 void AAnimal::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	FVector temp = GetActorLocation();
-	temp.Z += 1.f;
-	SetActorLocation(temp);
 
 }
 

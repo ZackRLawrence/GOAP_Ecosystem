@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeAnimal() {}
 	GOAP_ECOSYSTEM_API UClass* Z_Construct_UClass_AAnimal();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_GOAP_Ecosystem();
+	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AAnimal::StaticRegisterNativesAAnimal()
@@ -32,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeAnimal() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DetectionRadius_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DetectionRadius;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[];
 #endif
@@ -51,6 +56,14 @@ void EmptyLinkFunctionForGeneratedCodeAnimal() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAnimal_Statics::NewProp_DetectionRadius_MetaData[] = {
+		{ "Category", "Animal" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Animal.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAnimal_Statics::NewProp_DetectionRadius = { "DetectionRadius", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAnimal, DetectionRadius), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AAnimal_Statics::NewProp_DetectionRadius_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAnimal_Statics::NewProp_DetectionRadius_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAnimal_Statics::NewProp_Mesh_MetaData[] = {
 		{ "Category", "Animal" },
 		{ "EditInline", "true" },
@@ -59,6 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeAnimal() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAnimal_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAnimal, Mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AAnimal_Statics::NewProp_Mesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAnimal_Statics::NewProp_Mesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAnimal_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAnimal_Statics::NewProp_DetectionRadius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAnimal_Statics::NewProp_Mesh,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAnimal_Statics::StaticCppClassTypeInfo = {
@@ -88,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeAnimal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAnimal, 3495181857);
+	IMPLEMENT_CLASS(AAnimal, 2237174913);
 	template<> GOAP_ECOSYSTEM_API UClass* StaticClass<AAnimal>()
 	{
 		return AAnimal::StaticClass();

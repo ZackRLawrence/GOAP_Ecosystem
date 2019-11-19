@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeGOAP_Ecosystem_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x744F8E5C,
+				0x814141A4,
 				0xAF444FD6,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GOAP_Ecosystem.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{6ED73C0E-E5B2-4464-BAF5-18D4B2AAE246}</UniqueIdentifier>
+      <UniqueIdentifier>{39130B62-51DD-44D7-A60E-544A223519D8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GOAP_Ecosystem.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0A7D274F-7C85-4133-8B65-20AB5EFE9CEC}</UniqueIdentifier>
+      <UniqueIdentifier>{D055A7CA-E067-408C-BD5D-C0C01A686870}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GOAP_Ecosystem">
-      <UniqueIdentifier>{3848AEBE-6B8A-4009-A063-FED133214B7D}</UniqueIdentifier>
+      <UniqueIdentifier>{C643EF6A-A734-498B-A980-B39C880EA55A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GOAP_Ecosystem\Animal.cpp">
       <Filter>Source\GOAP_Ecosystem</Filter>
@@ -48,7 +48,7 @@
       <Filter>Source\GOAP_Ecosystem</Filter>
     </ClInclude>
     <Filter Include="Source\GOAP_Ecosystem\Animal">
-      <UniqueIdentifier>{298FEB96-7A10-4C53-8F07-35C2E5DE7AE3}</UniqueIdentifier>
+      <UniqueIdentifier>{4E1FFCC4-09D2-44B4-AD3E-679D9949C575}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GOAP_Ecosystem\Animal\Behavior.cpp">
       <Filter>Source\GOAP_Ecosystem\Animal</Filter>
@@ -68,20 +68,14 @@
     <ClInclude Include="..\..\Source\GOAP_Ecosystem\Animal\TestBehavior.h">
       <Filter>Source\GOAP_Ecosystem\Animal</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source\GOAP_Ecosystem\Plants">
-      <UniqueIdentifier>{5ba101fe-f71c-4a0a-9965-3632809821ad}</UniqueIdentifier>
+      <UniqueIdentifier>{17666303-5308-443D-9BB9-23DC459C2AB4}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\GOAP_Ecosystem\Plants\Plant.h">
-      <Filter>Source\GOAP_Ecosystem\Plants</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\Source\GOAP_Ecosystem\Plants\Plant.cpp">
       <Filter>Source\GOAP_Ecosystem\Plants</Filter>
     </ClCompile>
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\Plants\Plant.h">
+      <Filter>Source\GOAP_Ecosystem\Plants</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

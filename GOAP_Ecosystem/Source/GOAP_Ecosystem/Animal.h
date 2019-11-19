@@ -2,8 +2,11 @@
 
 #pragma once
 
+#include "Components/MeshComponent.h"
+#include "Components/SphereComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "UObject/ConstructorHelpers.h"
 #include "Animal.generated.h"
 
 UCLASS()
@@ -15,9 +18,14 @@ public:
 	// Sets default values for this actor's properties
 	AAnimal();
 
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	virtual void PostInitializeComponents() override;
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> SphereMeshAsset;
 
 public:	
 	// Called every frame
@@ -25,4 +33,10 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* Mesh;
+
+	UPROPERTY(EditAnywhere)
+	USphereComponent* DetectionRadius;
+
+	//UPROPERTY(EditAnywhere)
+	//UStaticMeshComponent* SphereMesh;
 };

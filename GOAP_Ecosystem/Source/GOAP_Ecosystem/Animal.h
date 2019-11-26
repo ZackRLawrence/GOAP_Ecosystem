@@ -25,7 +25,7 @@ protected:
 
 	virtual void PostInitializeComponents() override;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> SphereMeshAsset;
+	//static ConstructorHelpers::FObjectFinder<UStaticMesh> SphereMeshAsset;
 
 public:	
 	// Called every frame

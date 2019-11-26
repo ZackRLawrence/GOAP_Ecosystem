@@ -1,28 +1,14 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\GOAP_Ecosystem).
-  Creating makefile for GOAP_EcosystemEditor (no existing makefile)
   Parsing headers for GOAP_EcosystemEditor
     Running UnrealHeaderTool "D:\GOAP_Ecosystem\GOAP_Ecosystem\GOAP_Ecosystem.uproject" "D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\GOAP_EcosystemEditor\Development\GOAP_EcosystemEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for GOAP_EcosystemEditor in 9.0998065 seconds
+  Reflection code generated for GOAP_EcosystemEditor in 7.1145386 seconds
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 17 actions with 8 processes...
-    [1/17] Default.rc2
-    [2/17] SharedPCH.Engine.cpp
-    [3/17] GOAP_Ecosystem.init.gen.cpp
-    [4/17] Plant.cpp
-    [5/17] Animal.gen.cpp
-    [6/17] Animal.cpp
-    [7/17] Plant.gen.cpp
-    [8/17] GOAP_Ecosystem.cpp
-    [9/17] B_Move.cpp
-    [10/17] Behavior.cpp
-    [11/17] TestBehavior.cpp
-    [12/17] B_Move.gen.cpp
-    [13/17] Behavior.gen.cpp
-    [14/17] TestBehavior.gen.cpp
-    [15/17] UE4Editor-GOAP_Ecosystem.lib
+  Building 4 actions with 8 processes...
+    [1/4] Animal.cpp
+    [2/4] UE4Editor-GOAP_Ecosystem.lib
        Creating library D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.lib and object D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.exp
-    [16/17] UE4Editor-GOAP_Ecosystem.dll
+    [3/4] UE4Editor-GOAP_Ecosystem.dll
        Creating library D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.suppressed.lib and object D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.suppressed.exp
-    [17/17] GOAP_EcosystemEditor.target
-  Total time in Parallel executor: 60.05 seconds
-  Total execution time: 90.85 seconds
+    [4/4] GOAP_EcosystemEditor.target
+  Total time in Parallel executor: 119.12 seconds
+  Total execution time: 129.07 seconds

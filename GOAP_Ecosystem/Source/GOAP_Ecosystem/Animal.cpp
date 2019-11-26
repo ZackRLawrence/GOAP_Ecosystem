@@ -3,14 +3,14 @@
 
 #include "Animal.h"
 
-ConstructorHelpers::FObjectFinder<UStaticMesh> AAnimal::SphereMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
+//ConstructorHelpers::FObjectFinder<UStaticMesh> AAnimal::SphereMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
 
 // Sets default values
 AAnimal::AAnimal()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	
 	RootComponent = CreateDefaultSubobject<USceneComponent>(FName("Root"));
 
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(FName("AnimalMesh"));
@@ -31,6 +31,7 @@ void AAnimal::BeginPlay()
 
 void AAnimal::PostInitializeComponents()
 {
+	Super::PostInitializeComponents();
 	//Sphere = CreateDefaultSubobject<USphereComponent>("DetectionBounds");
 	//Sphere->SetupAttachment(RootComponent);
 	//Sphere->RegisterComponent();

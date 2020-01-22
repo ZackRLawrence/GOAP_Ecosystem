@@ -11,13 +11,13 @@ AAnimal::AAnimal()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	RootComponent = CreateDefaultSubobject<USceneComponent>(FName("Root"));
+    //RootComponent = CreateDefaultSubobject<USceneComponent>(FName("Root"));
 
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(FName("AnimalMesh"));
 	//Mesh->SetupAttachment(RootComponent);
-	DetectionRadius = CreateDefaultSubobject<USphereComponent>(FName("DetectionBounds"));
-	DetectionRadius->SetupAttachment(RootComponent);
-	DetectionRadius->SetSphereRadius(400);
+	EatRadius = CreateDefaultSubobject<USphereComponent>(FName("EatBounds"));
+	EatRadius->SetupAttachment(RootComponent);
+	EatRadius->SetSphereRadius(400);
 	//SphereMesh->SetStaticMesh(SphereMeshAsset.Object);
 	//SphereMesh->SetupAttachment(DetectionRadius);
 }

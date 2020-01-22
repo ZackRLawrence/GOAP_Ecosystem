@@ -10,7 +10,7 @@
 #include "Animal.generated.h"
 
 UCLASS()
-class GOAP_ECOSYSTEM_API AAnimal : public AActor
+class GOAP_ECOSYSTEM_API AAnimal : public APawn //public AActor
 {
 	GENERATED_BODY()
 	
@@ -35,7 +35,7 @@ public:
 	UStaticMeshComponent* Mesh;
 
 	UPROPERTY(EditAnywhere)
-	USphereComponent* DetectionRadius;
+	USphereComponent* EatRadius;
 
 	//UPROPERTY(EditAnywhere)
 	//UStaticMeshComponent* SphereMesh;

@@ -78,4 +78,19 @@
       <Filter>Source\GOAP_Ecosystem\Plants</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\GOAP_Ecosystem\Disruptive">
+      <UniqueIdentifier>{c926a325-2743-4a25-9576-c36746b5c51a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\Disruptive\Missile.h">
+      <Filter>Source\GOAP_Ecosystem\Disruptive</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\GOAP_Ecosystem\Disruptive\Missile.cpp">
+      <Filter>Source\GOAP_Ecosystem\Disruptive</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

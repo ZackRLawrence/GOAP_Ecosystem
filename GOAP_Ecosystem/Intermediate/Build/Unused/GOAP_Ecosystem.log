@@ -1,13 +1,22 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\GOAP_Ecosystem).
+  Creating makefile for GOAP_EcosystemEditor (game project files are newer)
   Parsing headers for GOAP_EcosystemEditor
     Running UnrealHeaderTool "D:\GOAP_Ecosystem\GOAP_Ecosystem\GOAP_Ecosystem.uproject" "D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\GOAP_EcosystemEditor\Development\GOAP_EcosystemEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for GOAP_EcosystemEditor in 7.5824966 seconds
+  Reflection code generated for GOAP_EcosystemEditor in 74.4210053 seconds
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 3 actions with 8 processes...
-    [1/3] UE4Editor-GOAP_Ecosystem.lib
+  Building 7 actions with 8 processes...
+    [1/7] GOAP_Ecosystem.init.gen.cpp
+    [2/7] Animal.cpp
+    [3/7] Missile.cpp
+D:\GOAP_Ecosystem\GOAP_Ecosystem\Source\GOAP_Ecosystem\Disruptive\Missile.cpp(44): warning C4458: declaration of 'targetLocation' hides class member
+    d:\goap_ecosystem\goap_ecosystem\source\goap_ecosystem\disruptive\Missile.h(27): note: see declaration of 'AMissile::targetLocation'
+D:\GOAP_Ecosystem\GOAP_Ecosystem\Source\GOAP_Ecosystem\Disruptive\Missile.cpp(55): warning C4458: declaration of 'target' hides class member
+    d:\goap_ecosystem\goap_ecosystem\source\goap_ecosystem\disruptive\Missile.h(43): note: see declaration of 'AMissile::target'
+    [4/7] Animal.gen.cpp
+    [5/7] UE4Editor-GOAP_Ecosystem.lib
        Creating library D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.lib and object D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.exp
-    [2/3] UE4Editor-GOAP_Ecosystem.dll
+    [6/7] UE4Editor-GOAP_Ecosystem.dll
        Creating library D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.suppressed.lib and object D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.suppressed.exp
-    [3/3] GOAP_EcosystemEditor.target
-  Total time in Parallel executor: 2.44 seconds
-  Total execution time: 11.05 seconds
+    [7/7] GOAP_EcosystemEditor.target
+  Total time in Parallel executor: 203.00 seconds
+  Total execution time: 298.27 seconds

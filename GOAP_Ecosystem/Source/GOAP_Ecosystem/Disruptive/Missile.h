@@ -32,7 +32,7 @@ public:
 
 	FQuat QuatPow(const FQuat &quat, const float &pow);
 
-	void UpdateMovement(const FVector &targetLocation);
+	void UpdateMovement(const FVector &targetLocation, const float &DeltaTime);
 	//void FindPlayer();
 	//void UpdateTarget();
 
@@ -43,7 +43,7 @@ public:
 	class AActor* target = nullptr;
 
 	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Test")
-	float turnRate = .04f;
+	float turnRate = 2;
 
 	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Test")
 	float speed = 1000.f;

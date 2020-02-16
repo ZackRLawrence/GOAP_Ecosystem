@@ -37,19 +37,24 @@ void AMissile::Tick(float DeltaTime)
 	{
 		targetLocation = target->GetActorLocation();
 	}
-	UpdateMovement(targetLocation);
+	UpdateMovement(targetLocation, DeltaTime);
 }
 
 //Rather than passing a transform to the function, I've passed a Vector. This is so in the future we could pass any location, regardless of where we got it, to the missile.
-void AMissile::UpdateMovement(const FVector &targetLocation)
+void AMissile::UpdateMovement(const FVector &targetLocation, const float &DeltaTime)
 {
+	
+	float temp = GetWorld()->GetDeltaSeconds();
+
 	//Convert Forward Vector to Quaternion
 	FQuat current = GetActorForwardVector().Rotation().Quaternion();
+
+	
 
 	//Find Vector for target direction, then convert to Quaternion
 	FQuat target = (targetLocation - GetActorLocation()).Rotation().Quaternion();
 
-	FQuat clampedChange = FQuat::MakeFromEuler(QuatPow(target * current.Inverse(), turnRate).Euler());
+	FQuat clampedChange = FQuat::MakeFromEuler(QuatPow(target * current.Inverse(), turnRate * DeltaTime).Euler());
 
 	//Spherically LERP between the two Quaternions by our turnRate
 	SetActorRotation(clampedChange * current);

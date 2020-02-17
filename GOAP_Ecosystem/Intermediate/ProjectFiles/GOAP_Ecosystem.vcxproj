@@ -364,6 +364,8 @@
     <NMakeOutput>..\..\Binaries\HTML5\GOAP_Ecosystem-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\GOAP_Ecosystem\PlayStationPractice\Threading\PrimeCalculator.cpp" />
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\PlayStationPractice\Threading\PrimeCalculator.h" />
     <None Include="..\..\GOAP_Ecosystem.uproject" />
     <None Include="..\..\Source\GOAP_Ecosystem.Target.cs" />
     <None Include="..\..\Source\GOAP_EcosystemEditor.Target.cs" />

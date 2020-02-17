@@ -21,12 +21,15 @@ protected:
 
 	const virtual float& GetBaseNutrition() const { return GenericBaseNutrition; }
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Mutation, meta = (AllowPrivateAcess = "true"))
+		float mutationRange;
 	
 public:	
 	// Sets default values for this actor's properties
 	APlant();
 	void InitializePlant(const float &relativeSize, const float &nutritionMultiplier);
 
+	UFUNCTION(BlueprintCallable, DisplayName = "Get Nutritional Value")
 	float GetNutritionValue() const { return GetBaseNutrition() * m_relativeSize * m_relativeSize * m_relativeSize * m_nutritionMultiplier; }
 
 protected:

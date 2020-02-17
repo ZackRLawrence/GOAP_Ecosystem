@@ -23,6 +23,14 @@ struct FVector;
 		P_NATIVE_BEGIN; \
 		P_THIS->SpawnDescendent(Z_Param_location); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNutritionValue) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetNutritionValue(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -34,6 +42,14 @@ struct FVector;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->SpawnDescendent(Z_Param_location); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNutritionValue) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetNutritionValue(); \
 		P_NATIVE_END; \
 	}
 
@@ -82,7 +98,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlant); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APlant)
 
 
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_PRIVATE_PROPERTY_OFFSET
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mutationRange() { return STRUCT_OFFSET(APlant, mutationRange); }
+
+
 #define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_10_PROLOG \
 	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_EVENT_PARMS
 

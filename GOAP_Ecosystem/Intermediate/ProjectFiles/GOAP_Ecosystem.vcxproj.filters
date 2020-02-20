@@ -78,4 +78,31 @@
       <Filter>Source\GOAP_Ecosystem\Plants</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\GOAP_Ecosystem\Disruptive">
+      <UniqueIdentifier>{c926a325-2743-4a25-9576-c36746b5c51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GOAP_Ecosystem\PlayStationPractice">
+      <UniqueIdentifier>{359eaf90-4279-4bc8-95f9-350ed2e578af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GOAP_Ecosystem\PlayStationPractice\Threading">
+      <UniqueIdentifier>{68dfb8a2-0612-450a-9b03-ee6791377bef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\Disruptive\Missile.h">
+      <Filter>Source\GOAP_Ecosystem\Disruptive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GOAP_Ecosystem\PlayStationPractice\Threading\PrimeCalculator.h">
+      <Filter>Source\GOAP_Ecosystem\PlayStationPractice\Threading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\GOAP_Ecosystem\Disruptive\Missile.cpp">
+      <Filter>Source\GOAP_Ecosystem\Disruptive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GOAP_Ecosystem\PlayStationPractice\Threading\PrimeCalculator.cpp">
+      <Filter>Source\GOAP_Ecosystem\PlayStationPractice\Threading</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

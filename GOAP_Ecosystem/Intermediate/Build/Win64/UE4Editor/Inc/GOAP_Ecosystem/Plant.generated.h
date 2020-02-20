@@ -8,14 +8,55 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FVector;
 #ifdef GOAP_ECOSYSTEM_Plant_generated_h
 #error "Plant.generated.h already included, missing '#pragma once' in Plant.h"
 #endif
 #define GOAP_ECOSYSTEM_Plant_generated_h
 
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_RPC_WRAPPERS
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_INCLASS_NO_PURE_DECLS \
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSpawnDescendent) \
+	{ \
+		P_GET_STRUCT(FVector,Z_Param_location); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SpawnDescendent(Z_Param_location); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNutritionValue) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetNutritionValue(); \
+		P_NATIVE_END; \
+	}
+
+
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSpawnDescendent) \
+	{ \
+		P_GET_STRUCT(FVector,Z_Param_location); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SpawnDescendent(Z_Param_location); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetNutritionValue) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetNutritionValue(); \
+		P_NATIVE_END; \
+	}
+
+
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_EVENT_PARMS
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_CALLBACK_WRAPPERS
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlant(); \
 	friend struct Z_Construct_UClass_APlant_Statics; \
@@ -24,7 +65,7 @@ public: \
 	DECLARE_SERIALIZER(APlant)
 
 
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_INCLASS \
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAPlant(); \
 	friend struct Z_Construct_UClass_APlant_Statics; \
@@ -33,7 +74,7 @@ public: \
 	DECLARE_SERIALIZER(APlant)
 
 
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_STANDARD_CONSTRUCTORS \
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlant(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APlant) \
@@ -46,7 +87,7 @@ private: \
 public:
 
 
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_ENHANCED_CONSTRUCTORS \
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APlant(APlant&&); \
@@ -57,26 +98,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlant); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APlant)
 
 
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_PRIVATE_PROPERTY_OFFSET
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_9_PROLOG
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_GENERATED_BODY_LEGACY \
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__mutationRange() { return STRUCT_OFFSET(APlant, mutationRange); }
+
+
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_10_PROLOG \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_EVENT_PARMS
+
+
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_PRIVATE_PROPERTY_OFFSET \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_RPC_WRAPPERS \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_INCLASS \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_STANDARD_CONSTRUCTORS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_PRIVATE_PROPERTY_OFFSET \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_RPC_WRAPPERS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_CALLBACK_WRAPPERS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_INCLASS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_GENERATED_BODY \
+#define GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_PRIVATE_PROPERTY_OFFSET \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_INCLASS_NO_PURE_DECLS \
-	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_12_ENHANCED_CONSTRUCTORS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_PRIVATE_PROPERTY_OFFSET \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_CALLBACK_WRAPPERS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_INCLASS_NO_PURE_DECLS \
+	GOAP_Ecosystem_Source_GOAP_Ecosystem_Plants_Plant_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

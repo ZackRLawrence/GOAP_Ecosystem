@@ -20,7 +20,7 @@ private: \
 	static void StaticRegisterNativesAAnimal(); \
 	friend struct Z_Construct_UClass_AAnimal_Statics; \
 public: \
-	DECLARE_CLASS(AAnimal, AActor, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/GOAP_Ecosystem"), NO_API) \
+	DECLARE_CLASS(AAnimal, APawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/GOAP_Ecosystem"), NO_API) \
 	DECLARE_SERIALIZER(AAnimal)
 
 
@@ -29,7 +29,7 @@ private: \
 	static void StaticRegisterNativesAAnimal(); \
 	friend struct Z_Construct_UClass_AAnimal_Statics; \
 public: \
-	DECLARE_CLASS(AAnimal, AActor, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/GOAP_Ecosystem"), NO_API) \
+	DECLARE_CLASS(AAnimal, APawn, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/GOAP_Ecosystem"), NO_API) \
 	DECLARE_SERIALIZER(AAnimal)
 
 

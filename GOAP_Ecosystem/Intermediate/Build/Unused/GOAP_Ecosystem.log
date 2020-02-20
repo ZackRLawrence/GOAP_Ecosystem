@@ -1,14 +1,16 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\GOAP_Ecosystem).
   Parsing headers for GOAP_EcosystemEditor
     Running UnrealHeaderTool "D:\GOAP_Ecosystem\GOAP_Ecosystem\GOAP_Ecosystem.uproject" "D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\GOAP_EcosystemEditor\Development\GOAP_EcosystemEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for GOAP_EcosystemEditor in 7.1145386 seconds
+  Reflection code generated for GOAP_EcosystemEditor in 9.070135 seconds
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 8 processes...
-    [1/4] Animal.cpp
-    [2/4] UE4Editor-GOAP_Ecosystem.lib
+  Building 5 actions with 8 processes...
+    [1/5] Plant.gen.cpp
+    [2/5] Plant.cpp
+D:\GOAP_Ecosystem\GOAP_Ecosystem\Source\GOAP_Ecosystem\Plants\Plant.cpp(12): warning C5038: data member 'APlant::m_reproduceTime' will be initialized after data member 'APlant::m_relativeSize'
+    [3/5] UE4Editor-GOAP_Ecosystem.lib
        Creating library D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.lib and object D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.exp
-    [3/4] UE4Editor-GOAP_Ecosystem.dll
+    [4/5] UE4Editor-GOAP_Ecosystem.dll
        Creating library D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.suppressed.lib and object D:\GOAP_Ecosystem\GOAP_Ecosystem\Intermediate\Build\Win64\UE4Editor\Development\GOAP_Ecosystem\UE4Editor-GOAP_Ecosystem.suppressed.exp
-    [4/4] GOAP_EcosystemEditor.target
-  Total time in Parallel executor: 119.12 seconds
-  Total execution time: 129.07 seconds
+    [5/5] GOAP_EcosystemEditor.target
+  Total time in Parallel executor: 16.32 seconds
+  Total execution time: 26.64 seconds
